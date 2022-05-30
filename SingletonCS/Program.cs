@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -130,7 +129,6 @@ namespace SingletonCS
             Menu.Instance.Start(); 
         }
     }
-    
 }
 
 public class Menu
@@ -172,7 +170,6 @@ public class Menu
                 case 5:
                     Menu.Instance.Html();
                     break;
-
             }
         }
     }
@@ -194,7 +191,6 @@ public class Menu
     {
         MSWordDocument Msdoc = new MSWordDocument("MSWord.doc", "Eugene", "Learning, Doc", "C:/Users/Eugene/Desktop/", 500);
         Msdoc.Info();
-
     }
     public void PDF()
     {
@@ -211,13 +207,11 @@ public class Menu
     {
         TXTDocument Txtdoc = new TXTDocument("WatchList.txt", "Danil", "Film, Watched, TXT", "C:/Users/Danil/Desktop/", 500);
         Txtdoc.Info();
-        
     }
     public void Html()
     {
         HTMLDocument Htmldoc = new HTMLDocument("AnimeSite.html", "Alex", "Anime, Site, HTML", "C:/Users/Alex/Desktop/", 20);
         Htmldoc.Info();
-        
     }
 }
 
