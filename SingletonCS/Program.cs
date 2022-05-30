@@ -32,6 +32,7 @@ public class MSWordDocument : Document
     {
         DocumentWordCount = WordCount;
     }
+    //Переопределение информации о документе
     public override void Info()
     {
         Console.WriteLine("MSWord Document");
